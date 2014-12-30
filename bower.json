@@ -1,0 +1,14 @@
+{
+  "name": "angularjs-ie8-builds",
+  "version": "1.3.8",
+  "homepage": "https://github.com/fergaldoyle/angular.js-ie8-builds",
+  "authors": [
+    "Fergal Doyle"
+  ],
+  "description": "a build of angular with changes to help support ie8",
+  "main": "dist/angular.js",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "Apache V2.0"
+}
