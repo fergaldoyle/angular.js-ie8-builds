@@ -8,6 +8,13 @@ AngularJS 1.3 does not work with IE8. With these custom builds you get good IE8 
 * [jQuery 1.*](http://jquery.com/download/)
 * AngularJS 1.3.* build from this repo (some poly-fills are baked in and minor fixes to enable IE8 support)
 
+### npm & bower
+
+	npm install angularjs-ie8-build
+	
+	bower install angularjs-ie8-build
+	
+
 ###Example
 ```html
 <!DOCTYPE html>
