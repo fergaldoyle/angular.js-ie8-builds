@@ -8,18 +8,6 @@ AngularJS 1.3 does not work with IE8. With these custom builds you get good IE8 
 * [jQuery 1.*](http://jquery.com/download/)
 * AngularJS 1.3.* build from this repo (some poly-fills are baked in and minor fixes to enable IE8 support)
 
-### npm & bower
-
-#####npm
-	npm install angularjs-ie8-build
-	
-#####bower
-	bower install angularjs-ie8-build 
-  
-bower install with local name "angular" 
-
-	bower install angular=angularjs-ie8-build
-
 ###Example
 ```html
 <!DOCTYPE html>
@@ -39,7 +27,17 @@ bower install with local name "angular"
 </html>
 ```
 
+### npm & bower
 
+#####npm
+	npm install angularjs-ie8-build
+	
+#####bower
+	bower install angularjs-ie8-build 
+  
+bower install with local name "angular" 
+
+	bower install angular=angularjs-ie8-build
 
 ###Careful now
 When using `$q` promise methods `catch` or `finally` in IE8 use bracket notation instead of dot notation. Same goes for `$http` `delete` method. IE8 does not like dot notation with these reserved words.
