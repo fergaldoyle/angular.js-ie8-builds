@@ -33,10 +33,9 @@ AngularJS 1.3 does not work with IE8. With these custom builds you get good IE8 
 	npm install angularjs-ie8-build
 	
 #####bower
-	bower install angularjs-ie8-build 
-  
-bower install with local name "angular" 
-
+	bower install angularjs-ie8-build
+	
+	// bower install with local name "angular"
 	bower install angular=angularjs-ie8-build
 
 ###Careful now
