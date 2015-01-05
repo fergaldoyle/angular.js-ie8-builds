@@ -89,11 +89,27 @@
           event.target = event.srcElement || target;
           listener.call(target, event);
     }]);
-      this.attachEvent('on' + type, registry[0][3]);
+
+      // http://msdn.microsoft.com/en-us/library/ie/hh180173%28v=vs.85%29.aspx
+      if(type === 'load' && this.tagName && this.tagName === 'SCRIPT') {
+        var reg = registry[0][3];
+        this.onreadystatechange = function(event)
+        {
+          if( this.readyState === "loaded" || this.readyState === "complete" ) {
+            reg.call(this, { type : "load" });
+          }
+        }
+      } else {
+        this.attachEvent('on' + type, registry[0][3]);
+      }
     };
     WindowPrototype[removeEventListener] = DocumentPrototype[removeEventListener] = ElementPrototype[removeEventListener] = function (type, listener) {
       for (var index = 0, register; register = registry[index]; ++index) {
         if (register[0] == this && register[1] == type && register[2] == listener) {
+          if(type === 'load' && this.tagName && this.tagName === 'SCRIPT') {
+            this.onreadystatechange = null;
+          }
+
           return this.detachEvent('on' + type, registry.splice(index, 1)[0][3]);
         }
       }
