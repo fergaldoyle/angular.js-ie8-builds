@@ -14,6 +14,7 @@ AngularJS 1.3 does not work with IE8. With these custom builds you get good IE8 
 <html>
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta charset="utf-8" />
 	<title>Angular 1.3 IE8</title>
 	<!--[if IE 8]>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/4.0.5/es5-shim.min.js"></script>
