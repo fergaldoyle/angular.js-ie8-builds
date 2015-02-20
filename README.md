@@ -22,7 +22,7 @@ AngularJS 1.3 does not work with IE8. With these custom builds you get good IE8 
 	<![endif]-->
 	<script src="angular.js"></script>
 </head>
-<body>
+<body ng-app="someApp">
 
 </body>
 </html>
