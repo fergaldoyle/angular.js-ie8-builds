@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="someApp">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <title>Angular 1.3 IE8</title>
+    <!--[if IE 8]>
+        <script src="vendor/es5-shim.min.js"></script>        
+    <![endif]-->
+    <script src="vendor/jquery-1.11.1.min.js"></script>
+    <script src="../dist/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+
+    <div ng-controller="someController">
+        
+        <p>{{message}}</p>
+        
+        <label>
+            <strong>New features like ng-model-options work in IE8</strong><br>
+            <input ng-model="model.foo" ng-model-options="{debounce: 500}" />
+        </label>
+        <pre>model.foo: {{model.foo}}</pre> 
+    </div>
+    
+</body>
+</html>

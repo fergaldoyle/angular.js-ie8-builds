@@ -56,7 +56,11 @@ promise.catch(function(){});
 promise['catch'](function(){});
 ```
 
-
+#### Other stuff
+*   Use attributes for directives, e.g. `<div ng-view>` instead of custom element `<ng-view>`
+*   If you want to use custom elements, you need to make IE8 aware of them first, e.g. `document.createElement('ng-view');`
+*   Use `ng-style` instead of `style="{{ someCss }}"`
+*   Check any additional angular or third party modules you are using for reserved words described above. If you find any, use a search and replace to change from dot notation to bracket notation
 
 
 

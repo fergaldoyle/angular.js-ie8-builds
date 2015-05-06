@@ -10,5 +10,6 @@
   "moduleType": [
     "globals"
   ],
+  "ignore": [ "example" ],
   "license": "MIT"
 }
