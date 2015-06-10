@@ -65,7 +65,8 @@ promise['catch'](function(){});
 
 
 ### Source
-The source is maintained here:
-https://github.com/fergaldoyle/angular.js/tree/ie8-compat
+The source is maintained here:  
+https://github.com/fergaldoyle/angular.js/tree/ie8-compat   
+https://github.com/fergaldoyle/angular.js/tree/ie8-compat-1.4
 
 
