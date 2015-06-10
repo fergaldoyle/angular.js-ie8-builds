@@ -1,12 +1,12 @@
-AngularJS 1.3 IE8 builds
+AngularJS 1.3 / 1.4 IE8 builds
 ========================
-AngularJS 1.3 does not work with IE8. With these custom builds you get good IE8 support. I can't guarantee that everything will work but anything I've tried works fine.
+AngularJS 1.3 / 1.4 does not work with IE8. With these custom builds you get good IE8 support. I can't guarantee that everything will work but anything I've tried works fine.
 
 ### What you need
 
 * [es5-shim](https://github.com/es-shims/es5-shim)
 * [jQuery 1.*](http://jquery.com/download/)
-* AngularJS 1.3.* build from this repo (some poly-fills are baked in and minor fixes to enable IE8 support)
+* AngularJS 1.4.* build from this repo (some poly-fills are baked in and minor fixes to enable IE8 support)
 
 ### Example
 ```html
@@ -15,7 +15,7 @@ AngularJS 1.3 does not work with IE8. With these custom builds you get good IE8 
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta charset="utf-8" />
-	<title>Angular 1.3 IE8</title>
+	<title>Angular 1.4 IE8</title>
 	<!--[if IE 8]>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/4.0.5/es5-shim.min.js"></script>
 		<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
