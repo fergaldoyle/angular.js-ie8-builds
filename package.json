@@ -1,6 +1,6 @@
 {
   "name": "angularjs-ie8-build",
-  "version": "1.4.0",
+  "version": "1.4.7",
   "description": "A build of AngularJS 1.4 with polyfils and some changes to bring back IE8 compatibilty",
   "main": "index.js",
   "repository": {
